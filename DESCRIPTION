@@ -1,0 +1,40 @@
+Package: BycatchAppICCAT
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = "ICCAT", role = c("aut")),
+    person(
+      given = "Ai", 
+      family = "Kimoto", 
+      role = c("cre"), 
+      email = "ai.kimoto@iccat.int"
+    ))
+Description: Companion R Shiny app to the R package BycatchEstimator.
+License: file LICENSE
+Config/roxygen2/version: 8.1.1
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Imports: 
+    base64enc,
+    bs4Dash,
+    bsplus,
+    BycatchEstimator (>= 1.0.0.0),
+    dplyr,
+    DT,
+    fresh,
+    knitr,
+    reactable,
+    readr,
+    rmarkdown,
+    shiny,
+    shinyBS,
+    shinybusy,
+    shinycssloaders,
+    shinyjs,
+    shinythemes,
+    shinyWidgets,
+    stringr,
+    waiter,
+    withr
+Remotes: 
+    ebabcock/BycatchEstimator
