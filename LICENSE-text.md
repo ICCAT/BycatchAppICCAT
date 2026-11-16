@@ -1,0 +1,3 @@
+# License
+
+    "Copyright (c) 2026 ICCAT. All rights reserved."
