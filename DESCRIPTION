@@ -1,13 +1,22 @@
 Package: BycatchAppICCAT
-Title: What the Package Does (One Line, Title Case)
+Title: Web application companion to BycatchEstimator R package
 Version: 0.0.0.9000
+URL: https://github.com/ICCAT/BycatchAppICCAT, https://iccat.github.io/BycatchAppICCAT/
 Authors@R: 
-    c(person(given = "ICCAT", role = c("aut")),
+    c(
+    person(given = "ICCAT", role = c("aut")),
     person(
       given = "Ai", 
       family = "Kimoto", 
       role = c("cre"), 
       email = "ai.kimoto@iccat.int"
+    ),
+    person(given = "Nature Analytics", role = "prg"),
+    person(
+      given = "Elizabeth", 
+      family = "Babcock", 
+      role = c("ctb"), 
+      email = "ebabcock@rsmas.miami.edu"
     ))
 Description: Companion R Shiny app to the R package BycatchEstimator.
 License: file LICENSE

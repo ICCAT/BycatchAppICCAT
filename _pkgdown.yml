@@ -1,0 +1,11 @@
+url: https://iccat.github.io/BycatchAppICCAT/
+template:
+  bootstrap: 5
+authors:
+  sidebar:
+    roles:
+    - aut
+    - cre
+    - prg
+    - ctb
+
