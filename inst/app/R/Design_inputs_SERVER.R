@@ -71,6 +71,8 @@ designSpecifications_SERVER <- function(id, bycatchSetup, outDir){
       
       output$analysisPreview <- renderUI({
         req(bycatchSetup()$active)
+        #Design vars as table
+        designVars <- bind_rows(compiledStratPairs())$designVar
 
         tagList(
           tags$strong(tags$em("Analysis summary")),
@@ -139,8 +141,8 @@ designSpecifications_SERVER <- function(id, bycatchSetup, outDir){
 
             fluidRow(
               column(4, tags$strong("Stratification variables:")),
-              column(4, div(style = "color: #007bff;", paste(input$strat_var, collapse = ", "))),
-              column(4, div(style = "color: #007bff;", paste(input$strat_var, collapse = ", ")))
+              column(4, div(style = "color: #007bff;", paste(designVars, collapse = ", "))),
+              column(4, div(style = "color: #007bff;", paste(designVars, collapse = ", ")))
             ),
             
             fluidRow(
@@ -295,7 +297,7 @@ designSpecifications_SERVER <- function(id, bycatchSetup, outDir){
       ## Button for running data checks
       observeEvent(input$run_design, {
         
-        print(bycatchSetup())
+        #print(bycatchSetup())
         
         on.exit({
           shinyjs::runjs("document.getElementById('ui-shield').style.display = 'none';")
@@ -459,10 +461,10 @@ designSpecifications_SERVER <- function(id, bycatchSetup, outDir){
         )
       }, ignoreInit = TRUE)
 
-      observeEvent(input$fileList, {
-        print("########################")
-        print(list.files(outDir, recursive = TRUE))
-      })
+      # observeEvent(input$fileList, {
+      #   print("########################")
+      #   print(list.files(outDir, recursive = TRUE))
+      # })
       
       #-------------------
       #Reactives returned

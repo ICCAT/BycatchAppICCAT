@@ -8,7 +8,7 @@ server <- function(input, output, session) {
   #Created once per user session
   outDir <- file.path(tempdir(), session$token)
   dir.create(outDir)
-  print(outDir)
+  #print(outDir)
   #Automatically destroyed when they close the browser
   session$onSessionEnded(function() {
     unlink(outDir, recursive = TRUE, force = TRUE)
