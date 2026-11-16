@@ -23,7 +23,7 @@ The installation also installs the packages the app depends on, so the first ins
 ## Starting the app
 
 ```r
-BycatchEstimatorApp::run_bycatch_app() #Every time
+BycatchAppICCAT::run_bycatch_app() #Every time
 ```
 
 The app opens in your default web browser. To stop it, close the browser tab and click the **Stop** button in the RStudio Console.
