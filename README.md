@@ -9,7 +9,14 @@ A point-and-click interface to the [BycatchEstimator](https://github.com/ebabcoc
 - **Design-based estimators:** estimate bycatch with the Ratio and Delta methods, with measures of uncertainty.
 - **Download outputs:** save reports, tables and data files as a zip folder.
 
-## Installation
+## Access the Bycatch App on the web
+
+- [Bycatch App on the web](https://iccat.shinyapps.io/BYET/)
+- [Source code on GitHub](https://github.com/ICCAT/BycatchAppICCAT)
+
+## Desktop Installation
+
+You can install and run this web app on your local machine, if you prefer.
 
 You need [R](https://cran.r-project.org) and [RStudio Desktop](https://posit.co/download/rstudio-desktop/).
 
