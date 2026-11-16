@@ -78,14 +78,15 @@
         "knitr"
       ],
       "Config/roxygen2/version": "8.1.1",
-      "Author": "Elizabeth Babcock [aut, cre], William Harford [aut, ctb], Ana Adao [aut, ctb]",
-      "Maintainer": "Elizabeth Babcock <ebabcock@rsmas.miami.edu>",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteUsername": "ebabcock",
       "RemoteRepo": "BycatchEstimator",
-      "RemoteRef": "main",
-      "RemoteSha": "27a10848f3adae9cc260fe9d9727c717b9a598ac"
+      "RemoteUsername": "ebabcock",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "fb032c9447292fdfe3e1508eac08d7e3eaa384ec",
+      "NeedsCompilation": "no",
+      "Author": "Elizabeth Babcock [aut, cre], William Harford [aut, ctb], Ana Adao [aut, ctb]",
+      "Maintainer": "Elizabeth Babcock <ebabcock@rsmas.miami.edu>"
     },
     "DBI": {
       "Package": "DBI",
@@ -3270,12 +3271,13 @@
     },
     "gdtools": {
       "Package": "gdtools",
-      "Version": "0.5.3",
+      "Version": "0.6.0",
       "Source": "Repository",
       "Title": "Font Metrics and Font Management Utilities for R Graphics",
-      "Authors@R": "c( person(\"David\", \"Gohel\", , \"david.gohel@ardata.fr\", role = c(\"aut\", \"cre\")), person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = \"aut\"), person(\"Lionel\", \"Henry\", , \"lionel@rstudio.com\", role = \"aut\"), person(\"Jeroen\", \"Ooms\", , \"jeroen@berkeley.edu\", role = \"aut\", comment = c(ORCID = \"0000-0002-4035-0289\")), person(\"Yixuan\", \"Qiu\", role = \"ctb\"), person(\"ArData\", role = \"cph\"), person(\"RStudio\", role = \"cph\") )",
-      "Description": "Compute text metrics (width, ascent, descent) from font files with 'FreeType', independently of the active graphic device. Font lookup is delegated to 'systemfonts'. Additional utilities let users register 'Google Fonts' or bundled 'Liberation' fonts, check font availability, and assemble 'htmlDependency' objects so that fonts are correctly embedded in 'Shiny' applications, 'R Markdown' documents, and 'htmlwidgets' outputs such as 'ggiraph'.",
+      "Authors@R": "c( person(\"David\", \"Gohel\", , \"david.gohel@ardata.fr\", role = c(\"aut\", \"cre\")), person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = \"aut\"), person(\"Lionel\", \"Henry\", , \"lionel@rstudio.com\", role = \"aut\"), person(\"Jeroen\", \"Ooms\", , \"jeroen@berkeley.edu\", role = \"aut\", comment = c(ORCID = \"0000-0002-4035-0289\")), person(\"Yixuan\", \"Qiu\", role = \"ctb\"), person(\"ArData\", role = \"cph\"), person(\"RStudio\", role = \"cph\"), person(\"The STIX Fonts Project Authors\", role = \"cph\", comment = \"STIX Two Math font, see file COPYRIGHTS\") )",
+      "Description": "Compute text metrics (width, ascent, descent), with or without kerning, from font files with 'FreeType', independently of the active graphic device. Font lookup is delegated to 'systemfonts'. Additional utilities let users register 'Google Fonts', the bundled 'Liberation' fonts or the bundled math font 'STIX Two Math', check font availability, and assemble 'htmlDependency' objects so that fonts are correctly embedded in 'Shiny' applications, 'R Markdown' documents, and 'htmlwidgets' outputs such as 'ggiraph'.",
       "License": "GPL-3 | file LICENSE",
+      "Copyright": "See file COPYRIGHTS",
       "URL": "https://davidgohel.github.io/gdtools/",
       "BugReports": "https://github.com/davidgohel/gdtools/issues",
       "Depends": [
@@ -3300,7 +3302,7 @@
       "Encoding": "UTF-8",
       "SystemRequirements": "freetype2",
       "NeedsCompilation": "yes",
-      "Author": "David Gohel [aut, cre], Hadley Wickham [aut], Lionel Henry [aut], Jeroen Ooms [aut] (ORCID: <https://orcid.org/0000-0002-4035-0289>), Yixuan Qiu [ctb], ArData [cph], RStudio [cph]",
+      "Author": "David Gohel [aut, cre], Hadley Wickham [aut], Lionel Henry [aut], Jeroen Ooms [aut] (ORCID: <https://orcid.org/0000-0002-4035-0289>), Yixuan Qiu [ctb], ArData [cph], RStudio [cph], The STIX Fonts Project Authors [cph] (STIX Two Math font, see file COPYRIGHTS)",
       "Maintainer": "David Gohel <david.gohel@ardata.fr>",
       "Repository": "RSPM"
     },
@@ -3338,7 +3340,7 @@
     },
     "ggplot2": {
       "Package": "ggplot2",
-      "Version": "4.0.3",
+      "Version": "4.0.4",
       "Source": "Repository",
       "Title": "Create Elegant Data Visualisations Using the Grammar of Graphics",
       "Authors@R": "c( person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = \"aut\", comment = c(ORCID = \"0000-0003-4757-117X\")), person(\"Winston\", \"Chang\", role = \"aut\", comment = c(ORCID = \"0000-0002-1576-2126\")), person(\"Lionel\", \"Henry\", role = \"aut\"), person(\"Thomas Lin\", \"Pedersen\", , \"thomas.pedersen@posit.co\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-5147-4711\")), person(\"Kohske\", \"Takahashi\", role = \"aut\"), person(\"Claus\", \"Wilke\", role = \"aut\", comment = c(ORCID = \"0000-0002-7470-9261\")), person(\"Kara\", \"Woo\", role = \"aut\", comment = c(ORCID = \"0000-0002-5125-4188\")), person(\"Hiroaki\", \"Yutani\", role = \"aut\", comment = c(ORCID = \"0000-0002-3385-7233\")), person(\"Dewey\", \"Dunnington\", role = \"aut\", comment = c(ORCID = \"0000-0002-9415-4582\")), person(\"Teun\", \"van den Brand\", role = \"aut\", comment = c(ORCID = \"0000-0002-9335-7468\")), person(\"Posit, PBC\", role = c(\"cph\", \"fnd\"), comment = c(ROR = \"03wc8by49\")) )",
@@ -7999,9 +8001,9 @@
     },
     "tweedie": {
       "Package": "tweedie",
-      "Version": "3.1.0",
+      "Version": "3.2.2",
       "Source": "Repository",
-      "Date": "2026-05-18",
+      "Date": "2026-11-15",
       "Title": "Evaluation of Tweedie Exponential Family Models",
       "Authors@R": "person(\"Peter K.\", \"Dunn\", email = \"pdunn2@usc.edu.au\", role = c(\"cre\", \"aut\") )",
       "Depends": [
@@ -8023,9 +8025,9 @@
       "Description": "Maximum likelihood computations for Tweedie families, including the series expansion (Dunn and Smyth, 2005; <doi:10.1007/s11222-005-4070-y>) and the Fourier inversion  (Dunn and Smyth, 2008; <doi:10.1007/s11222-007-9039-6>), and related methods.",
       "License": "GPL (>= 2)",
       "NeedsCompilation": "yes",
-      "RoxygenNote": "7.3.3",
       "Config/testthat/edition": "3",
       "VignetteBuilder": "knitr",
+      "Config/roxygen2/version": "8.1.1",
       "Author": "Peter K. Dunn [cre, aut]",
       "Maintainer": "Peter K. Dunn <pdunn2@usc.edu.au>",
       "Repository": "RSPM"

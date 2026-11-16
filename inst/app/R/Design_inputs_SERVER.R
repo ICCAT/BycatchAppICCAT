@@ -294,7 +294,9 @@ designSpecifications_SERVER <- function(id, bycatchSetup, outDir){
 
       ## Button for running data checks
       observeEvent(input$run_design, {
-
+        
+        print(bycatchSetup())
+        
         on.exit({
           shinyjs::runjs("document.getElementById('ui-shield').style.display = 'none';")
         })
@@ -352,11 +354,11 @@ designSpecifications_SERVER <- function(id, bycatchSetup, outDir){
             varTmp <- input$group_var
             if(is.null(input$group_var)) varTmp <- NA
             
-            # print(designVars)
-            # print(designPooling)
-            # print(poolTypes)
-            # print(pooledVar)
-            # print(adjacentNum)
+            #print(designVars)
+            #print(designPooling)
+            #print(poolTypes)
+            #print(pooledVar)
+            #print(adjacentNum)
             
             BycatchEstimator::bycatchDesign(
               setupObj = bycatchSetup()$setupObj,
@@ -415,7 +417,6 @@ designSpecifications_SERVER <- function(id, bycatchSetup, outDir){
         on.exit({
           shinyjs::runjs("document.getElementById('ui-shield').style.display = 'none';")
         })
-        
         shinyalert(
           inputId = session$ns("deactivateAlert"),
           title = "Reset design-based estimator analysis?",
@@ -458,7 +459,10 @@ designSpecifications_SERVER <- function(id, bycatchSetup, outDir){
         )
       }, ignoreInit = TRUE)
 
-
+      observeEvent(input$fileList, {
+        print("########################")
+        print(list.files(outDir, recursive = TRUE))
+      })
       
       #-------------------
       #Reactives returned

@@ -67,6 +67,10 @@ designSpecifications_UI <- function(id){
         elevation = NULL
       )
     ),
+    actionBttn(
+      inputId = ns("fileList"),
+      label = "Print temp file list"
+    ),
     #---------------------------
     #Main input panel
     #--------------------------
