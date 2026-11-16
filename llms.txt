@@ -34,7 +34,7 @@ first install can take several minutes.
 
 ``` r
 
-BycatchEstimatorApp::run_bycatch_app() #Every time
+BycatchAppICCAT::run_bycatch_app() #Every time
 ```
 
 The app opens in your default web browser. To stop it, close the browser
