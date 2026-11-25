@@ -244,7 +244,7 @@ observerupload_UI <- function(id){
                   pickerInput(
                     inputId = ns("observer_catchtype"),
                     label = tagList("Create label for catch type", div("*", style = "display: inline; color: red;")),
-                    choices = c("Dead discards", "Live discards","Discards","Bycatch","Other"),
+                    choices = c("Dead discards", "Live discards","Discards","Bycatch", "Catch", "Other"),
                     selected = character(0),
                     width = '100%',
                     multiple = TRUE,
