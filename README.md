@@ -11,7 +11,7 @@ A point-and-click interface to the [BycatchEstimator](https://github.com/ebabcoc
 
 ## Access the Bycatch App on the web
 
-- [Bycatch App on the web](https://iccat.shinyapps.io/BYET/){:target="_blank"}
+- [Bycatch App on the web](https://iccat.shinyapps.io/BYET/)
 - [Source code on GitHub](https://github.com/ICCAT/BycatchAppICCAT)
 - The web application appears to function correctly in Chrome, Edge, and FireFox. However, we do not recommend the DuckDuckGo browser as its privacy settings may prevent some features from working correctly.
 
